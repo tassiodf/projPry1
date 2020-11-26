@@ -25,6 +25,13 @@ public class Contas {
 		contaPoupanca.setDiaRendimento(10);
 		
 		/**
+		 * Mostrar dados da conta
+		 */
+		System.out.printf("Nome do titular: %s. Saldo da conta: R$%.2f. Limite da conta: R$%.2f Número da conta: %d. "
+				+ "Dia do rendimento: %d.\n\n", contaBancaria.getCliente(), contaBancaria.getSaldo(), contaEspecial.getLimite(),
+				contaBancaria.getNum_conta(), contaPoupanca.getDiaRendimento());
+		
+		/**
 		 * Sacar um determinado valor 
 		 * Escolher saque pois compartilham da mesma conta mas com regras diferentes
 		 */
@@ -48,12 +55,6 @@ public class Contas {
 //		contaPoupanca.calcularNovoSaldo(0.5);
 //		System.out.println("Saldo após soma da taxa de rendimento: R$ " + contaPoupanca.getSaldo());
 		
-		/**
-		 * Mostrar dados da conta
-		 */
-		System.out.printf("Nome do titular: %s. Saldo da conta: R$%.2f. Limite da conta: R$%.2f Número da conta: %d. "
-				+ "Dia do rendimento: %d.", contaBancaria.getCliente(), contaBancaria.getSaldo(), contaEspecial.getLimite(),
-				contaBancaria.getNum_conta(), contaPoupanca.getDiaRendimento());
 	}
 
 }
